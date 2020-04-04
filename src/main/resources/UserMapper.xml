@@ -1,0 +1,17 @@
+<mapper namespace = "com.custom.model.UserDao">
+    <select id = "selectList" resultType="com.custom.model.User">
+        select * from user
+    </select>
+    <select id="selectByUser" resultType="com.custom.model.User" parammeterType="com.custom.model.User">
+        select * from user where id=#{id} and name=#{name}
+    </select>
+    <update id="updateById" parammeterType="com.custom.model.User">
+        update user set name=#{name} where id=#{id}
+    </update>
+    <delete id="deleteById" parammeterType="com.custom.model.User">
+        delete from user where id=#{id}
+    </delete>
+    <insert id="insert" parammeterType="com.custom.model.User">
+        insert into user values(#{id}, #{name})
+    </insert>
+</mapper>

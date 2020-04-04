@@ -1,0 +1,11 @@
+<configuration >
+    <!-- 数据库配置信息 -->
+    <datasource>
+        <property name="driver" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql:///note" />
+        <property name="username" value="root" />
+        <property name="password" value="lj123456" />
+    </datasource>
+    <!-- 存放Mapper文件全路径 -->
+    <mapper path="UserMapper.xml" />
+</configuration>
